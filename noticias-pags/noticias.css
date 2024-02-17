@@ -1,11 +1,11 @@
 /* MENU */
 
-iframe{
+iframe {
   width: 100%;
   height: auto;
 }
 
-header{
+header {
   height: 30px;
 }
 
@@ -13,7 +13,7 @@ header{
   max-height: 650px;
   height: auto;
   width: auto;
-  border:#4bbbda dotted 3px;
+  border: #4bbbda dotted 3px;
   background-image: url("/noticias-arquivos/capa-paris.png");
   background-image: no-repeat no-repeat;
   background-size: 1000px, 600px;
@@ -27,9 +27,7 @@ header{
   border-width: 0.2rem 0 0;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+
 
 div {
   display: block;
@@ -37,43 +35,50 @@ div {
 
 body {
   margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
 }
 
 
-.flex-destaques {
+.destaques-flex-pai {
   display: flex;
   background-color: #4bbbda;
   height: 600px;
   width: 1200px;
+  justify-content: center space-between;
+  flex-wrap: wrap;
 }
 
-.destaques-a {
-height: 580px;
-width: 580px;
-background-color: #ffffff;
-border: 1px solid red;
-flex-direction: column;
+.destaques-flex-filho-g {
+  display: flex;
+  height: 598px;
+  width: 598px;
+  background-color: #ffffff;
+  border: 1px red solid;
+  flex-direction: column;
+  justify-content: center space-between;
+  flex-wrap: wrap;
 }
 
-.destaques-b {
-  height: 280px;
-  width: 580px;
+.destaques-flex-filho-m {
+  display: flex;
+  height: 292px;
+  width: 590px;
   background-color: blue;
-  border: 1px solid red;
-  flex-direction: row-reverse;
-  }
+  border: 1px solid crimson;
+  flex-direction: row;
+  justify-content: center space-between;
+  flex-wrap: wrap;
+}
 
-.destaques-c {
-  height: 50px;
-  width: 50px;
-  background-color:violet;
+.destaques-flex-filho-p {
+  height: 288px;
+  width: 288px;
+  background-color: violet;
   border: 1px solid white;
-  }
+}
 
 .bd-example::after {
   display: block;
@@ -95,9 +100,15 @@ flex-direction: column;
   border-radius: 0.25rem;
 }
 
+.card-img-top{
+height: 220px;
+width: auto;
+}
+
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
+
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
@@ -108,11 +119,14 @@ flex-direction: column;
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  background-color: #6DDCD8;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif font-weight: 400;
+  color: #fffff;
+  text-align: left;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -124,6 +138,7 @@ flex-direction: column;
   background-color: #007bff;
   border-color: #007bff;
 }
+
 .btn {
   display: inline-block;
   font-weight: 400;
